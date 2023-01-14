@@ -1,4 +1,4 @@
  #!/bin/bash
 docker container kill selenium
 docker rm selenium
-docker run -d --name selenium --restart=always -p 4444:4444 selenium/standalone-chrome
+docker run -d --name selenium --restart=always -p 0.0.0.0:4444:4444 selenium/standalone-chrome
